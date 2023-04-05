@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+        <script src="molecule.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+        <title> Molecule </title>
+    </head>
+    <body>
+        <h1> Molecule.io</h1>
+        <div class="topnav">
+            <a href="/index.html" id="home">Home</a>
+            <a href="/element.html" id="element">Add/Remove Element</a>
+            <a href="/upload.html" id="upload">Upload SDF</a>
+            <a class="active" href="/molecule.html" id="molecule">Molecule</a>
+        </div>
+
+        <div id="no_mol">
+            <br><br><h3>There are no Molecules to display</h3>
+        </div>
+
+        <div id="has_mol">
+            <div id="dropbox">
+                <br><br><h3>Molecule Select</h3>
+                <label>Select Molecule to Display</label>
+                <select id="selection"></select><br><br>
+            </div>
+            <div id="display_form">
+                <label>Select Rotation</label>
+                <select id="rotation">
+                    <option value="x">x</option>
+                    <option value="y">y</option>
+                    <option value="z">z</option>
+                </select><br><br>
+                <label>Select Degrees</label>
+                <input type="number" value="0" id="degrees" /><br><br>
+                <button class="subbut" id="display">Display Molecule</button><br><br>
+            </div>
+            <div id="image_div"></div>
+        </div>
+    </body>
+</html>

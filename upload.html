@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+        <script src="upload.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+        <title> Molecule </title>
+    </head>
+    <body>
+        <h1> Molecule.io</h1>
+
+        <div class="topnav">
+            <a href="/index.html" id="home">Home</a>
+            <a href="/element.html" id="element">Add/Remove Element</a>
+            <a class="active" href="/upload.html" id="upload">Upload SDF</a>
+            <a href="/molecule.html" id="molecule">Molecule</a>
+        </div>
+
+        <div id="upload_page">
+            <form id="upload_form">
+                <br><br><label>Enter sdf file:</label>
+                <input type="file" id="sdf_file" accept=".sdf" required/><br><br>
+                <label>Enter Molecule name:</label>
+                <input type="text" placeholder="e.g. Water" id="mol_name" required/><br><br>
+                <button class="subbut" type="submit" id="upload_file_button">Upload file</button>
+                <!-- <input type="submit" value="Upload file"/> -->
+            </form>
+            <p id="loading">Loading .... </p>
+        </div>
+    </body>
+</html>
